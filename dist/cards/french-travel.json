@@ -1,0 +1,86 @@
+[
+  {
+    "type": "text",
+    "front": "Hello (formal)",
+    "back": "**Bonjour**"
+  },
+  {
+    "type": "text",
+    "front": "Thank you (very much)",
+    "back": "**Merci (beaucoup)**"
+  },
+  {
+    "type": "text",
+    "front": "Where is the train station?",
+    "back": "**Où est la gare?**"
+  },
+  {
+    "type": "text",
+    "front": "I would like a coffee",
+    "back": "**Je voudrais un café**"
+  },
+  {
+    "type": "text",
+    "front": "How much does it cost?",
+    "back": "**Combien ça coûte?**"
+  },
+  {
+    "type": "text",
+    "front": "Excuse me / I'm sorry",
+    "back": "**Excusez-moi** (formal) / **Pardon**"
+  },
+  {
+    "type": "text",
+    "front": "Goodbye",
+    "back": "**Au revoir**"
+  },
+  {
+    "type": "text",
+    "front": "Do you speak English?",
+    "back": "**Parlez-vous anglais?**"
+  },
+  {
+    "type": "mc",
+    "front": "Which phrase means 'the bill, please' at a French restaurant?",
+    "back": "L'addition is the bill; the full phrase politely asks for it.",
+    "mcOptions": ["Le menu, s'il vous plaît", "L'addition, s'il vous plaît", "La carte, s'il vous plaît", "Le pourboire, s'il vous plaît"],
+    "mcCorrectIndex": 1
+  },
+  {
+    "type": "mc",
+    "front": "What does 'Je suis perdu' mean?",
+    "back": "Literally 'I am lost' — used when you're geographically or emotionally lost.",
+    "mcOptions": ["I am tired", "I am lost", "I am happy", "I am hungry"],
+    "mcCorrectIndex": 1
+  },
+  {
+    "type": "tf",
+    "front": "In French, 'pain' means bread.",
+    "back": "Pain = bread. The word also gives us 'panini' (Italian diminutive).",
+    "tfAnswer": true
+  },
+  {
+    "type": "tf",
+    "front": "'Merci' is the French word for 'Monday'.",
+    "back": "Lundi is Monday. Merci means 'thank you'.",
+    "tfAnswer": false
+  },
+  {
+    "type": "matching",
+    "front": "Match each French greeting to its time of day",
+    "back": "French greetings are time-sensitive — using the right one shows respect.",
+    "matchingPairs": [
+      { "left": "Bonjour", "right": "Good morning / afternoon" },
+      { "left": "Bonsoir", "right": "Good evening" },
+      { "left": "Bonne nuit", "right": "Good night" },
+      { "left": "Salut", "right": "Hi / Bye (informal)" }
+    ]
+  },
+  {
+    "type": "ordering",
+    "front": "Order a coffee in French, step by step (the polite version)",
+    "back": "First greet, then order, then ask for the bill at the end.",
+    "orderingAnswer": ["Bonjour", "Un café, s'il vous plaît", "Merci", "L'addition, s'il vous plaît"],
+    "orderingItems": ["L'addition, s'il vous plaît", "Un café, s'il vous plaît", "Bonjour", "Merci"]
+  }
+]

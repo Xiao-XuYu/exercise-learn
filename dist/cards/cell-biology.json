@@ -1,0 +1,86 @@
+[
+  {
+    "type": "text",
+    "front": "What is the powerhouse of the cell?",
+    "back": "**Mitochondrion** — generates most of the cell's ATP through oxidative phosphorylation."
+  },
+  {
+    "type": "text",
+    "front": "What does the rough ER do?",
+    "back": "Synthesizes and modifies **proteins** destined for secretion or membranes. Studded with ribosomes."
+  },
+  {
+    "type": "text",
+    "front": "Difference between prokaryotes and eukaryotes?",
+    "back": "Eukaryotes have a **membrane-bound nucleus** and organelles; prokaryotes do not."
+  },
+  {
+    "type": "text",
+    "front": "What is osmosis?",
+    "back": "Net movement of **water** across a semipermeable membrane, from low to high solute concentration."
+  },
+  {
+    "type": "text",
+    "front": "Function of lysosomes?",
+    "back": "**Digestive** organelles — break down waste, debris, and worn-out organelles using hydrolytic enzymes."
+  },
+  {
+    "type": "text",
+    "front": "What is the role of ribosomes?",
+    "back": "Sites of **protein synthesis** — translate mRNA into polypeptides."
+  },
+  {
+    "type": "text",
+    "front": "What is the cell membrane made of?",
+    "back": "A **phospholipid bilayer** with embedded proteins, cholesterol, and carbohydrates."
+  },
+  {
+    "type": "text",
+    "front": "What is the function of the nucleus?",
+    "back": "Stores **DNA**, controls gene expression, and is the site of transcription."
+  },
+  {
+    "type": "mc",
+    "front": "Which organelle is responsible for protein synthesis?",
+    "back": "Ribosomes read mRNA codons and assemble the corresponding polypeptide chain.",
+    "mcOptions": ["Mitochondrion", "Ribosome", "Lysosome", "Golgi apparatus"],
+    "mcCorrectIndex": 1
+  },
+  {
+    "type": "mc",
+    "front": "Which structure regulates what enters and exits a eukaryotic cell?",
+    "back": "The phospholipid bilayer is selectively permeable — small nonpolar molecules pass freely; large/polar molecules need channels or pumps.",
+    "mcOptions": ["Cell wall", "Cell membrane", "Nuclear envelope", "Cytoskeleton"],
+    "mcCorrectIndex": 1
+  },
+  {
+    "type": "tf",
+    "front": "Mitochondria have their own DNA, separate from the nucleus.",
+    "back": "Mitochondrial DNA (mtDNA) is a small circular genome inherited maternally — it supports the endosymbiotic theory.",
+    "tfAnswer": true
+  },
+  {
+    "type": "tf",
+    "front": "Plant cells contain chloroplasts but animal cells do not.",
+    "back": "Chloroplasts are exclusive to plants and some algae; animal cells lack them and rely on mitochondria for ATP.",
+    "tfAnswer": true
+  },
+  {
+    "type": "matching",
+    "front": "Match each process to where it happens in the cell",
+    "back": "Cellular processes are compartmentalized; location often reveals function.",
+    "matchingPairs": [
+      { "left": "Transcription", "right": "Nucleus" },
+      { "left": "Translation", "right": "Ribosome" },
+      { "left": "Citric acid cycle", "right": "Mitochondrial matrix" },
+      { "left": "Glycolysis", "right": "Cytoplasm" }
+    ]
+  },
+  {
+    "type": "ordering",
+    "front": "Arrange these levels of biological organization from smallest to largest",
+    "back": "Atoms → molecules → organelles → cells → tissues → organs → organ systems → organism.",
+    "orderingAnswer": ["Atom", "Molecule", "Organelle", "Cell", "Tissue", "Organ"],
+    "orderingItems": ["Organ", "Atom", "Tissue", "Organelle", "Molecule", "Cell"]
+  }
+]

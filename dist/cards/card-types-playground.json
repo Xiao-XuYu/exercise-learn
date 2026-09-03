@@ -1,0 +1,92 @@
+[
+  {
+    "type": "text",
+    "front": "What is photosynthesis?",
+    "back": "The process by which plants (and some bacteria) convert **light energy** into chemical energy, producing glucose from CO₂ and water."
+  },
+  {
+    "type": "text",
+    "front": "What does CPU stand for?",
+    "back": "**Central Processing Unit** — the chip that executes instructions and coordinates work in a computer."
+  },
+  {
+    "type": "text",
+    "front": "Define mitosis.",
+    "back": "Cell division that produces two **genetically identical daughter cells** from a single parent cell."
+  },
+  {
+    "type": "mc",
+    "front": "Which of these is a JavaScript primitive?",
+    "back": "Primitives (string, number, boolean, null, undefined, symbol, bigint) are immutable. Array and Object are reference types.",
+    "mcOptions": ["Array", "Object", "string", "Function"],
+    "mcCorrectIndex": 2
+  },
+  {
+    "type": "mc",
+    "front": "What is the capital of Australia?",
+    "back": "Canberra — chosen as a compromise between rivals Sydney and Melbourne.",
+    "mcOptions": ["Sydney", "Melbourne", "Canberra", "Perth"],
+    "mcCorrectIndex": 2
+  },
+  {
+    "type": "mc",
+    "front": "Which organelle produces most of a cell's ATP?",
+    "back": "Mitochondria run oxidative phosphorylation to generate ~32 ATP per glucose — the 'powerhouse' of the cell.",
+    "mcOptions": ["Nucleus", "Mitochondrion", "Ribosome", "Golgi apparatus"],
+    "mcCorrectIndex": 1
+  },
+  {
+    "type": "tf",
+    "front": "The Great Wall of China is visible to the naked eye from the Moon.",
+    "back": "A popular myth. At lunar distance (~384,000 km) the wall is far too narrow for the naked eye.",
+    "tfAnswer": false
+  },
+  {
+    "type": "tf",
+    "front": "Water boils at 100°C at sea level under standard atmospheric pressure.",
+    "back": "At 1 atm, water's boiling point is exactly 100°C.",
+    "tfAnswer": true
+  },
+  {
+    "type": "tf",
+    "front": "The adult human body contains 206 bones.",
+    "back": "Babies have ~270 bones, many of which fuse during growth. Adults end up with 206.",
+    "tfAnswer": true
+  },
+  {
+    "type": "matching",
+    "front": "Match each sorting algorithm to its worst-case complexity",
+    "back": "Worst-case and average-case often differ — quick sort's O(n²) worst comes from pathological pivot choices.",
+    "matchingPairs": [
+      { "left": "Bubble sort", "right": "O(n²)" },
+      { "left": "Quick sort", "right": "O(n²)" },
+      { "left": "Merge sort", "right": "O(n log n)" },
+      { "left": "Heap sort", "right": "O(n log n)" }
+    ]
+  },
+  {
+    "type": "matching",
+    "front": "Match each Greek philosopher to their core idea",
+    "back": "These shorthand maxims gloss much deeper bodies of work.",
+    "matchingPairs": [
+      { "left": "Socrates", "right": "Know thyself" },
+      { "left": "Plato", "right": "Theory of Forms" },
+      { "left": "Aristotle", "right": "The golden mean" },
+      { "left": "Heraclitus", "right": "Everything flows" }
+    ]
+  },
+  {
+    "type": "ordering",
+    "front": "Order the planets by distance from the Sun",
+    "back": "My Very Educated Mother Just Served Us Noodles — Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune.",
+    "orderingAnswer": ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"],
+    "orderingItems": ["Neptune", "Mars", "Mercury", "Saturn", "Earth", "Uranus", "Venus", "Jupiter"]
+  },
+  {
+    "type": "ordering",
+    "front": "Arrange the phases of mitosis in order",
+    "back": "PMAT: Prophase → Metaphase → Anaphase → Telophase.",
+    "orderingAnswer": ["Prophase", "Metaphase", "Anaphase", "Telophase"],
+    "orderingItems": ["Telophase", "Prophase", "Anaphase", "Metaphase"]
+  }
+]

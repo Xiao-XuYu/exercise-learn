@@ -1,0 +1,59 @@
+[
+  {
+    "type": "text",
+    "front": "What is the overall equation for photosynthesis?",
+    "back": "**6CO₂ + 6H₂O + light → C₆H₁₂O₆ + 6O₂** — carbon dioxide and water, in the presence of light, yield glucose and oxygen."
+  },
+  {
+    "type": "text",
+    "front": "Where do the light reactions occur?",
+    "back": "In the **thylakoid membranes** of the chloroplast. Light is absorbed and water is split to produce O₂, ATP, and NADPH."
+  },
+  {
+    "type": "text",
+    "front": "What does the Calvin cycle produce?",
+    "back": "A 3-carbon sugar, **G3P** (glyceraldehyde-3-phosphate), which can be combined into glucose. Uses ATP and NADPH from light reactions."
+  },
+  {
+    "type": "text",
+    "front": "What is chlorophyll's role?",
+    "back": "It absorbs **red and blue** wavelengths and reflects green — that's why plants look green."
+  },
+  {
+    "type": "mc",
+    "front": "Which molecule is the primary electron carrier from the light reactions to the Calvin cycle?",
+    "back": "NADPH carries high-energy electrons (and a proton) from photosystem I to the Calvin cycle.",
+    "mcOptions": ["ATP", "NADPH", "FADH₂", "Glucose"],
+    "mcCorrectIndex": 1
+  },
+  {
+    "type": "mc",
+    "front": "What gas is released as a byproduct of photosynthesis?",
+    "back": "Oxygen — released when water is split at photosystem II.",
+    "mcOptions": ["Carbon dioxide", "Methane", "Oxygen", "Nitrogen"],
+    "mcCorrectIndex": 2
+  },
+  {
+    "type": "tf",
+    "front": "Photosynthesis occurs mainly in plant chloroplasts, never in any animal cell.",
+    "back": "Animals don't photosynthesize, but some animal cells (e.g. in sea slugs) can harbor functional chloroplasts stolen from algae.",
+    "tfAnswer": false
+  },
+  {
+    "type": "tf",
+    "front": "The Calvin cycle requires light directly to operate.",
+    "back": "The Calvin cycle is light-independent (it's called the 'dark reaction' for historical reasons) but depends on ATP/NADPH from the light reactions.",
+    "tfAnswer": false
+  },
+  {
+    "type": "matching",
+    "front": "Match each stage of photosynthesis to its inputs/outputs",
+    "back": "Light reactions make ATP/NADPH; the Calvin cycle uses them to fix carbon.",
+    "matchingPairs": [
+      { "left": "Light reactions input", "right": "H₂O + light" },
+      { "left": "Light reactions output", "right": "O₂ + ATP + NADPH" },
+      { "left": "Calvin cycle input", "right": "CO₂ + ATP + NADPH" },
+      { "left": "Calvin cycle output", "right": "G3P (sugar)" }
+    ]
+  }
+]

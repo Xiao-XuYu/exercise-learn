@@ -1,0 +1,66 @@
+[
+  {
+    "type": "text",
+    "front": "What is a Promise in JavaScript?",
+    "back": "An object representing the eventual completion (or failure) of an async operation. Has three states: **pending, fulfilled, rejected**."
+  },
+  {
+    "type": "text",
+    "front": "What does `async` do to a function?",
+    "back": "Wraps its return value in a Promise. Inside, you can use **await** to pause until another Promise settles."
+  },
+  {
+    "type": "text",
+    "front": "What is the event loop?",
+    "back": "JS's runtime model: the **call stack** runs sync code; the **callback queue** holds async callbacks; the event loop pops from queue when stack is empty."
+  },
+  {
+    "type": "text",
+    "front": "Difference between microtasks and macrotasks?",
+    "back": "Microtasks (Promise callbacks) run **before** the next macrotask (setTimeout, I/O). That's why Promise.then runs before setTimeout(fn, 0)."
+  },
+  {
+    "type": "mc",
+    "front": "Which is a way to handle a rejected Promise?",
+    "back": "Both .catch() and try/await/catch work; .catch() is the legacy chained way.",
+    "mcOptions": [".then only", ".catch()", "ignore it", "throw new Error()"],
+    "mcCorrectIndex": 1
+  },
+  {
+    "type": "mc",
+    "front": "What does `await` do?",
+    "back": "Pauses the async function until the awaited Promise settles, then resumes with its resolved value (or throws on rejection).",
+    "mcOptions": ["Blocks the entire program", "Pauses only the current async function", "Creates a new thread", "Skips to next macrotask"],
+    "mcCorrectIndex": 1
+  },
+  {
+    "type": "tf",
+    "front": "Promise.all rejects as soon as any input promise rejects.",
+    "back": "Yes — it short-circuits on the first rejection. Use Promise.allSettled if you want all results.",
+    "tfAnswer": true
+  },
+  {
+    "type": "tf",
+    "front": "`async` functions run synchronously until the first `await`.",
+    "back": "Correct — everything before the first await runs on the call stack synchronously.",
+    "tfAnswer": true
+  },
+  {
+    "type": "matching",
+    "front": "Match each async pattern to its description",
+    "back": "These are common patterns; modern JS prefers async/await over raw .then chains.",
+    "matchingPairs": [
+      { "left": "Callback", "right": "Function passed to another function, called when done" },
+      { "left": "Promise", "right": "Object representing eventual completion" },
+      { "left": "async/await", "right": "Syntactic sugar over Promises" },
+      { "left": "Observable", "right": "Stream of values over time (RxJS)" }
+    ]
+  },
+  {
+    "type": "ordering",
+    "front": "Order the JS runtime execution: what runs first inside a script?",
+    "back": "Sync code → microtasks (Promise callbacks) → next macrotask (timers, I/O) → render.",
+    "orderingAnswer": ["Sync top-level code", "Promise.then callbacks", "setTimeout(0) callbacks", "requestAnimationFrame"],
+    "orderingItems": ["setTimeout(0) callbacks", "Sync top-level code", "Promise.then callbacks", "requestAnimationFrame"]
+  }
+]

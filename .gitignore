@@ -141,3 +141,7 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Allow deploy target to receive built artifacts from card-learn-template
+!dist/
+!dist/**
