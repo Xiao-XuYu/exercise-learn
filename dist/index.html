@@ -3,23 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <!-- PWA manifest（display: fullscreen）：
+         安卓 Chrome「添加到主屏幕」后从图标启动 = 系统真沉浸，状态栏消失、
+         顶部摄像头区被应用填满。浏览器地址栏正常打开网页时仍是普通模式，
+         需用户主动"添加到主屏幕"。见卡 2026-10-19 全屏分析。 -->
+    <link rel="manifest" href="./manifest.webmanifest" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
     />
-    <meta name="theme-color" content="#dd4a68" />
+    <!-- 安卓状态栏/顶部摄像头区颜色：跟随页面主题（浅色=白与顶栏融合；暗色=页面背景深色），
+         避免全屏时顶端出现突兀的系统底色（白/黑割裂）。 -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f141d" media="(prefers-color-scheme: dark)" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <title>卡片</title>
-    <script type="module" crossorigin src="./assets/index-B_ru7zZo.js"></script>
+    <script type="module" crossorigin src="./assets/index-Bq9BlQ_z.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-hePW80VL.js">
     <link rel="modulepreload" crossorigin href="./assets/minimax-DU8b-6cv.js">
     <link rel="modulepreload" crossorigin href="./assets/idb-D_dA1PZe.js">
     <link rel="modulepreload" crossorigin href="./assets/useAiStreamWakeLock-C8r23XrU.js">
-    <link rel="modulepreload" crossorigin href="./assets/AskAiPanel-C_bPKvt2.js">
+    <link rel="modulepreload" crossorigin href="./assets/AskAiPanel-Cfn7i-Wp.js">
     <link rel="modulepreload" crossorigin href="./assets/Modal-0kKujVfR.js">
     <link rel="modulepreload" crossorigin href="./assets/cardTypes--ZDrumKE.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-Bz0x9_hm.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-qV2knAp3.css">
   </head>
   <body>
     <div id="root"></div>

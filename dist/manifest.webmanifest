@@ -1,0 +1,19 @@
+{
+  "name": "卡片",
+  "short_name": "卡片",
+  "description": "卡片学习工具",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#f0f2f5",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
