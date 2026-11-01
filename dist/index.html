@@ -2,12 +2,15 @@
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="./favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon-180x180.png" />
     <!-- PWA manifest（display: fullscreen）：
          安卓 Chrome「添加到主屏幕」后从图标启动 = 系统真沉浸，状态栏消失、
          顶部摄像头区被应用填满。浏览器地址栏正常打开网页时仍是普通模式，
-         需用户主动"添加到主屏幕"。见卡 2026-10-19 全屏分析。 -->
-    <link rel="manifest" href="./manifest.webmanifest" />
+         需用户主动"添加到主屏幕"。见卡 2026-10-19 全屏分析。
+         2026-11-01：manifest 改由 vite-plugin-pwa 构建时生成并自动注入
+         <link rel="manifest">（图标 pwa-192/512.png 在 public/），这里不再手写。 -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
@@ -18,18 +21,19 @@
     <meta name="theme-color" content="#0f141d" media="(prefers-color-scheme: dark)" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="卡片" />
     <title>卡片</title>
-    <script type="module" crossorigin src="./assets/index-CPNaMvIG.js"></script>
+    <script type="module" crossorigin src="./assets/index-qzSpFBdX.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-hePW80VL.js">
     <link rel="modulepreload" crossorigin href="./assets/selectionBridgeScript-BFghfs5b.js">
     <link rel="modulepreload" crossorigin href="./assets/idb-p5fQFytG.js">
     <link rel="modulepreload" crossorigin href="./assets/useAiStreamWakeLock-BDWjw5xq.js">
     <link rel="modulepreload" crossorigin href="./assets/AskAiPanel-D2eabTze.js">
     <link rel="modulepreload" crossorigin href="./assets/cardTypes-x7egVL30.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-BsHCcHUy.css">
-  </head>
+    <link rel="stylesheet" crossorigin href="./assets/index-DiOiVqFE.css">
+  <link rel="manifest" href="./manifest.webmanifest"></head>
   <body>
-    <div id="root"></div>
+    <div id="root"></div>
   </body>
 </html><!-- touch -->
  
