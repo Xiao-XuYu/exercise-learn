@@ -1,0 +1,4 @@
+var e=RegExp(`\\u0001(\\d)\\u0002([\\s\\S]*?)\\u0003`,`g`);function t(e,t){return`${Math.min(9,Math.max(1,e))}${t.trim()}`}function n(t){let n=t.replace(/[ \t]+/g,` `).replace(/ *\n */g,`
+`).replace(/\n{3,}/g,`
+
+`).trim(),r=``,i=0,a=[];for(let t of n.matchAll(e))r+=n.slice(i,t.index),a.push({level:Number(t[1]),title:t[2].trim(),offset:r.length}),r+=`${t[2].trim()}\n`,i=t.index+t[0].length;return r+=n.slice(i),{text:r.trim(),headings:a}}function r(e,t=`application/xml`){let n=new DOMParser().parseFromString(e,t);return n.getElementsByTagName(`parsererror`).length>0?new DOMParser().parseFromString(e,`text/html`):n}function i(e,t){let n=e.getElementsByTagName(`*`),r=[];for(let e=0;e<n.length;e++)n[e].localName===t&&r.push(n[e]);return r}function a(e){return e.split(`#`)[0]}function o(e,t){let n=e.split(`/`);n.pop();for(let e of a(t).split(`/`))e===`..`?n.pop():e&&e!==`.`&&n.push(e);return n.join(`/`)}export{n as a,a as i,r as n,t as o,o as r,i as t};
