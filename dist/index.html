@@ -5,10 +5,10 @@
     <link rel="icon" href="./favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="apple-touch-icon" href="./apple-touch-icon-180x180.png" />
-    <!-- PWA manifest（display: fullscreen）：
-         安卓 Chrome「添加到主屏幕」后从图标启动 = 系统真沉浸，状态栏消失、
-         顶部摄像头区被应用填满。浏览器地址栏正常打开网页时仍是普通模式，
-         需用户主动"添加到主屏幕"。见卡 2026-10-19 全屏分析。
+    <!-- PWA manifest（display: standalone）：
+         必须是 standalone，不能 fullscreen —— fullscreen 会隐藏系统导航条，
+         安卓手势返回/上滑的第一次只唤出导航条并提示"再次滑动"，
+         用户会以为返回要二次确认。要沉浸式由应用内全屏按钮按需触发。
          2026-11-01：manifest 改由 vite-plugin-pwa 构建时生成并自动注入
          <link rel="manifest">（图标 pwa-192/512.png 在 public/），这里不再手写。 -->
     <meta
